@@ -1,0 +1,131 @@
+[20:20:49.71] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Jan 19 20:20:46 2018
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[20:20:52.94] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+8+610
+[20:22:21.67] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[20:22:21.67] /i de::showOpenDesign
+[20:22:21.71] /o oa:0x22d47800
+[20:22:21.77] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[20:22:22.20] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+529+226
+[20:22:22.86] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[20:22:22.87] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[20:22:24.71] /i gi::setCurrentIndex {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:22:24.73] /i gi::setItemSelection {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:22:25.88] /i gi::setCurrentIndex {designViews} -index {Tran_DC_SAE} -in [gi::getDialogs {deOpenDesign}]
+[20:22:25.89] /i gi::setItemSelection {designViews} -index {Tran_DC_SAE} -in [gi::getDialogs {deOpenDesign}]
+[20:22:26.09] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[20:22:26.09] /# de::open [dm::findCellView {Tran_DC_SAE} -cellName {inverter_testbench} -libName {mylibrary}] -readOnly 0
+[20:22:26.15] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[20:22:26.22] /r giWindowId 1
+[20:22:26.22] /r giWindowGeometry 600x500
+[20:22:26.71] /o oa:0x27ec9bf0
+[20:22:27.06] /i db::setAttr geometry -of [gi::getFrames 1] -value 600x500+164+187
+[20:22:29.70] /i gi::executeAction menuPreShow -in [gi::getWindows 1]
+[20:22:29.71] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 1]]
+[20:22:31.90] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 1]
+[20:22:31.90] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 1]
+[20:22:31.95] /m Information: "Starting incremental netlisting for design "mylibrary/inverter_testbench/schematic"..." (NETLISTING-010)
+[20:22:31.96] /o 	############################################
+[20:22:31.96] /o 	--------------------------------------------
+[20:22:31.97] /o 	PDK Name................... : SAED_PDK_90
+[20:22:31.97] /o 	PDK Release Date........... : 29-Sep-2015
+[20:22:31.97] /o 	PDK Custom Designer Version : J-2014.12-2
+[20:22:31.97] /o 	--------------------------------------------
+[20:22:31.97] /o 	############################################
+[20:22:31.97] /o 
+[20:22:31.97] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[20:22:31.97] /o SAED PDK 90: Loaded callbacks
+[20:22:31.98] /o SAED PDK 90: Loaded display resources
+[20:22:32.08] /o No Design Integrity rule violations found in "mylibrary/inverter_testbench/schematic"
+[20:22:32.17] /m Information: "Netlisting design "mylibrary/inverter_testbench/schematic" finished successfully." (NETLISTING-012)
+[20:22:32.18] /m Information: "Composing simulator input file for design "mylibrary/inverter_testbench/schematic"..."
+[20:22:32.26] /m Information: "Simulator input file composed successfully for design "mylibrary/inverter_testbench/schematic""
+[20:22:32.70] /r giWindowId 2
+[20:22:32.71] /r giWindowGeometry 800x600
+[20:22:32.85] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 2]
+[20:22:32.85] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 2]
+[20:22:32.90] /m Information: "Starting HSPICE simulation for design: mylibrary/inverter_testbench/schematic"
+[20:22:32.90] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 2]
+[20:22:32.93] /o 1
+[20:22:32.93] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 2]
+[20:22:33.17] /i db::setAttr geometry -of [gi::getFrames 2] -value 800x600+190+213
+[20:22:33.26] /m Information: "Simulation completed successfully for design: mylibrary/inverter_testbench/schematic "
+[20:22:33.49] /m Information: Measurement calculations completed for testbench: default in 0s
+[20:22:33.50] /m Information: "Evaluating and plotting outputs..."
+[20:22:33.54] /m Information: Launching Waveform Viewer "cd /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[20:28:56.26] /i gi::setActiveWindow 1
+[20:28:56.27] /i gi::setActiveWindow 1 -raise true
+[20:28:56.81] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[20:28:56.84] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[20:28:56.94] /m Information: Waveform Viewer exited normally.
+[20:29:01.29] /i gi::setActiveWindow 2
+[20:29:01.30] /i gi::setActiveWindow 2 -raise true
+[20:29:03.14] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[20:29:05.98] /i gi::setActiveWindow 0
+[20:29:05.99] /i gi::setActiveWindow 0 -raise true
+[20:29:09.45] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[20:29:09.45] /i de::showOpenDesign
+[20:29:09.46] /o oa:0x22748ca0
+[20:29:09.52] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[20:29:09.76] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+529+226
+[20:29:11.96] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:29:11.97] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:29:13.26] /i gi::setCurrentIndex {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:29:13.26] /i gi::setItemSelection {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:29:13.40] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[20:29:13.40] /# de::open [dm::findCellView {symbol} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[20:29:13.45] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:29:13.47] /r giWindowId 3
+[20:29:13.47] /r giWindowGeometry 1450x864
+[20:29:13.79] /o 0.1
+[20:29:14.72] /i db::setAttr geometry -of [gi::getFrames 3] -value 1450x864+15+54
+[20:29:15.49] /w Warning: Nothing is bound to the 'Alt-4' in the current active set. (WINDOW-015)
+[20:29:15.50] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[20:29:15.78] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:29:15.85] /i gi::setActiveWindow 0
+[20:29:15.85] /i gi::setActiveWindow 0 -raise true
+[20:29:22.24] /# gi::executeAction deRecentFile_mylibrary_inverter_schematic_Editing -in [gi::getWindows 0]
+[20:29:22.24] /a de::open mylibrary/inverter/schematic -readOnly false
+[20:29:22.30] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:29:22.32] /r giWindowId 4
+[20:29:22.33] /r giWindowGeometry 1450x864
+[20:29:22.65] /o oa:0x27e13e80
+[20:29:23.05] /i db::setAttr geometry -of [gi::getFrames 4] -value 1450x864+33+72
+[20:29:24.48] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:29:24.48] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.1375 2.98125} -index 0 -intent none] -replace true
+[20:29:24.49] /o oa:0x2890dc10
+[20:29:28.73] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:29:28.73] /i de::cycleActiveFigure [gi::getWindows 4] -direction next
+[20:29:28.73] /o oa:0x23863710
+[20:29:28.73] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.175 3.08125} -index 0 -intent none] -replace true
+[20:29:28.74] /o oa:0x28903d20
+[20:29:40.17] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 4]
+[20:29:40.17] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value true
+[20:29:42.39] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:29:42.39] /i de::cycleActiveFigure [gi::getWindows 4] -direction next
+[20:29:42.40] /o oa:0x27eb6780
+[20:29:42.40] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.125 2.98125} -index 0 -intent none] -replace true
+[20:29:42.41] /o oa:0x28af1630
+[20:29:46.37] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:29:46.38] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.1375 1.98125} -index 0 -intent none] -replace true
+[20:29:46.39] /o oa:0x27ae12e0
+[20:29:53.19] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:29:53.19] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.21875 2.95625} -index 0 -intent none] -replace true
+[20:29:53.21] /o oa:0x27ae12e0
+[20:29:55.23] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[20:29:55.81] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:29:55.88] /i gi::setActiveWindow 0
+[20:29:55.89] /i gi::setActiveWindow 0 -raise true
+[20:29:57.23] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[20:29:57.29] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:29:57.59] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+666+362
+[20:29:58.62] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:29:58.69] /o Shutdown time: Fri Jan 19 20:29:58 2018
+[20:29:58.69] /o Elapsed session real time: 9.13 minutes
+[20:29:58.69] /o Session terminated. Log is at /home/tempmaj/esegovia/eecs168/cdesigner.log

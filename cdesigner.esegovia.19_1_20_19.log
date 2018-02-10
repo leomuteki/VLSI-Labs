@@ -1,0 +1,239 @@
+[20:07:10.48] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Jan 19 20:07:06 2018
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[20:07:12.53] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+8+610
+[20:07:15.43] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[20:07:15.43] /i dm::showLibraryManager
+[20:07:15.44] /r giWindowId 1
+[20:07:15.44] /r giWindowGeometry 660x600+50+50
+[20:07:15.76] /o oa:0x24d3b9a0
+[20:07:16.31] /i db::setAttr geometry -of [gi::getFrames 1] -value 660x600+58+81
+[20:07:18.00] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[20:07:18.01] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[20:07:18.95] /i gi::setCurrentIndex {cells} -index {inverter} -in [gi::getWindows 1]
+[20:07:18.97] /i gi::setItemSelection {cells} -index {inverter} -in [gi::getWindows 1]
+[20:07:20.22] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[20:07:20.23] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[20:07:20.40] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:07:20.42] /o 	############################################
+[20:07:20.42] /o 	--------------------------------------------
+[20:07:20.43] /o 	PDK Name................... : SAED_PDK_90
+[20:07:20.43] /o 	PDK Release Date........... : 29-Sep-2015
+[20:07:20.43] /o 	PDK Custom Designer Version : J-2014.12-2
+[20:07:20.43] /o 	--------------------------------------------
+[20:07:20.43] /o 	############################################
+[20:07:20.43] /o 
+[20:07:20.43] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[20:07:20.43] /o SAED PDK 90: Loaded callbacks
+[20:07:20.44] /o SAED PDK 90: Loaded display resources
+[20:07:20.51] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:07:20.59] /r giWindowId 2
+[20:07:20.59] /r giWindowGeometry 1450x864
+[20:07:22.19] /i db::setAttr geometry -of [gi::getFrames 2] -value 1450x864+15+54
+[20:07:23.20] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[20:07:23.20] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {1.06875 3.09375} -index 0 -intent none] -replace true
+[20:07:23.21] /o oa:0x25623360
+[20:07:24.34] /i 
+              /c                     if { [db::getCount [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]] ]]] == 1 &&
+              /c                         [db::getAttr objType -of [db::getNext [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]] ]]]] == "Table"} {
+              /c                             if {[db::isEmpty [gi::getDialogs {seEditTable} -parent [gi::getWindows 2 ] ] ] ||
+              /c                                 ![db::getAttr shown -of [gi::getDialogs {seEditTable} -parent [gi::getWindows 2 ] ] ]} {
+              /c                                     se::showEditTable -window 2
+              /c                             } else { 
+              /c                                     gi::closeWindows [gi::getDialogs {seEditTable} -parent [gi::getWindows 2 ] ]
+              /c                             }
+              /c                     } else {
+              /c                             gi::executeAction dePropertyEditorToggle -in 2 
+              /c                     }
+              /c             
+[20:07:24.36] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[20:07:25.71] /i gi::setItemSelection {parameters} -index {w,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:25.73] /i gi::setCurrentIndex {parameters} -index {w,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:28.83] /i gi::setField {parameters} -value {0.5u} -index {w,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:32.21] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[20:07:32.21] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[20:07:32.31] /r giDialog gi::setActiveDialog [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]]
+[20:07:32.59] /r giDialog db::setAttr geometry -of [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]] -value 446x99+515+428
+[20:07:33.21] /r giDialog gi::pressButton {apply} -in [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]]
+[20:07:34.72] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[20:07:34.72] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {1.15625 2.05} -index 0 -intent none] -replace true
+[20:07:34.75] /o oa:0x25905090
+[20:07:35.90] /i gi::setItemSelection {parameters} -index {w,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:35.91] /i gi::setCurrentIndex {parameters} -index {w,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:39.06] /i gi::setField {parameters} -value {0.25u} -index {w,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[20:07:39.73] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[20:07:39.73] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[20:07:39.83] /r giDialog gi::setActiveDialog [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]]
+[20:07:40.12] /r giDialog db::setAttr geometry -of [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]] -value 446x99+515+428
+[20:07:40.84] /r giDialog gi::pressButton {apply} -in [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 2]]
+[20:07:41.28] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[20:07:42.39] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 2]
+[20:07:42.39] /i ise::check
+[20:07:42.42] /m Information: 
+              /c Cross view checking for mylibrary/inverter/symbol with mylibrary/inverter/schematic
+              /c No violations found. (DE_EDIT-007)
+[20:07:42.42] /m Information: 
+[20:07:42.42] /o Checking "mylibrary/inverter/schematic"
+[20:07:42.42] /o No rule violations found in "mylibrary/inverter/schematic"
+[20:07:42.43] /m Information: Checking process is completed: marking the design violations
+[20:07:42.47] /m Information: Marking of designs is completed
+[20:07:42.47] /o 1
+[20:07:43.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[20:07:43.73] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:07:43.80] /i gi::setActiveWindow 1
+[20:07:43.80] /i gi::setActiveWindow 1 -raise true
+[20:07:45.82] /i gi::setCurrentIndex {cells} -index {inverter_testbench} -in [gi::getWindows 1]
+[20:07:45.85] /i gi::setItemSelection {cells} -index {inverter_testbench} -in [gi::getWindows 1]
+[20:07:46.31] /i gi::setCurrentIndex {views} -index {Tran_DC_SAE} -in [gi::getWindows 1]
+[20:07:46.32] /i gi::setItemSelection {views} -index {Tran_DC_SAE} -in [gi::getWindows 1]
+[20:07:46.45] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:07:47.58] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[20:07:47.65] /r giWindowId 3
+[20:07:47.65] /r giWindowGeometry 600x500
+[20:07:49.13] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+164+187
+[20:07:49.44] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 3]
+[20:07:49.44] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 3]
+[20:07:49.48] /m Information: "Starting incremental netlisting for design "mylibrary/inverter_testbench/schematic"..." (NETLISTING-010)
+[20:07:49.59] /o No Design Integrity rule violations found in "mylibrary/inverter_testbench/schematic"
+[20:07:49.65] /m Information: "mylibrary inverter schematic" renetlisted. (NETLISTING-056)
+[20:07:49.67] /m Information: "mylibrary inverter_testbench schematic" renetlisted. (NETLISTING-056)
+[20:07:49.70] /m Information: "Netlisting design "mylibrary/inverter_testbench/schematic" finished successfully." (NETLISTING-012)
+[20:07:49.70] /m Information: "Composing simulator input file for design "mylibrary/inverter_testbench/schematic"..."
+[20:07:49.79] /m Information: "Simulator input file composed successfully for design "mylibrary/inverter_testbench/schematic""
+[20:07:50.19] /r giWindowId 4
+[20:07:50.19] /r giWindowGeometry 800x600
+[20:07:50.56] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 4]
+[20:07:50.56] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[20:07:50.63] /m Information: "Starting HSPICE simulation for design: mylibrary/inverter_testbench/schematic"
+[20:07:50.64] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[20:07:50.66] /o 1
+[20:07:50.67] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[20:07:50.90] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+190+213
+[20:07:51.02] /m Information: "Simulation completed successfully for design: mylibrary/inverter_testbench/schematic "
+[20:07:51.25] /m Information: Measurement calculations completed for testbench: default in 0s
+[20:07:51.26] /m Information: "Evaluating and plotting outputs..."
+[20:07:51.30] /m Information: Launching Waveform Viewer "cd /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[20:07:52.34] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[20:07:52.38] /i gi::setActiveWindow 3
+[20:07:52.39] /i gi::setActiveWindow 3 -raise true
+[20:08:46.36] /m Information: Waveform Viewer exited normally.
+[20:08:50.26] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+307+172
+[20:09:11.21] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+847+125
+[20:09:13.17] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[20:09:13.18] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 3]]
+[20:09:18.23] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 3]
+[20:09:18.23] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 3]
+[20:09:18.29] /m Information: "Starting incremental netlisting for design "mylibrary/inverter_testbench/schematic"..." (NETLISTING-010)
+[20:09:18.37] /o No Design Integrity rule violations found in "mylibrary/inverter_testbench/schematic"
+[20:09:18.44] /m Information: "Netlisting design "mylibrary/inverter_testbench/schematic" finished successfully." (NETLISTING-012)
+[20:09:18.45] /m Information: "Composing simulator input file for design "mylibrary/inverter_testbench/schematic"..."
+[20:09:18.52] /m Information: "Simulator input file composed successfully for design "mylibrary/inverter_testbench/schematic""
+[20:09:18.98] /r giWindowId 5
+[20:09:18.99] /r giWindowGeometry 800x600
+[20:09:19.15] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 5]
+[20:09:19.15] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 5]
+[20:09:19.26] /m Information: "Starting HSPICE simulation for design: mylibrary/inverter_testbench/schematic"
+[20:09:19.27] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 5]
+[20:09:19.29] /o 1
+[20:09:19.29] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 5]
+[20:09:19.52] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x600+34+57
+[20:09:19.67] /m Information: "Simulation completed successfully for design: mylibrary/inverter_testbench/schematic "
+[20:09:19.88] /m Information: Measurement calculations completed for testbench: default in 0s
+[20:09:19.89] /m Information: "Evaluating and plotting outputs..."
+[20:09:19.93] /m Information: Launching Waveform Viewer "cd /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/tempmaj/esegovia/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[20:12:03.22] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[20:12:03.23] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 3]]
+[20:12:03.50] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[20:12:03.51] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 3]]
+[20:12:03.79] /i gi::setActiveWindow 3
+[20:12:03.80] /i gi::setActiveWindow 3 -raise true
+[20:12:04.27] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[20:12:04.28] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 3]]
+[20:12:04.67] /# gi::executeAction saDisplayPlotSet -in [gi::getWindows 3]
+[20:12:04.67] /i sa::plotOutputs -window 3
+[20:12:37.91] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[20:12:37.92] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 3]]
+[20:12:38.52] /# gi::executeAction saDisplayPlotSet -in [gi::getWindows 3]
+[20:12:38.52] /i sa::plotOutputs -window 3
+[20:13:18.03] /m Information: Waveform Viewer exited normally.
+[20:13:19.10] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[20:13:19.14] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[20:13:20.62] /i gi::setActiveWindow 5
+[20:13:20.63] /i gi::setActiveWindow 5 -raise true
+[20:13:20.95] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x596+128+53
+[20:13:21.26] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x596+128+53
+[20:13:21.44] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[20:13:22.51] /i gi::setActiveWindow 1
+[20:13:22.52] /i gi::setActiveWindow 1 -raise true
+[20:13:22.79] /i db::setAttr geometry -of [gi::getFrames 1] -value 660x600+115+77
+[20:13:23.22] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[20:17:46.29] /i gi::setActiveWindow 0
+[20:17:46.30] /i gi::setActiveWindow 0 -raise true
+[20:17:51.17] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[20:17:51.17] /i de::showOpenDesign
+[20:17:51.49] /o oa:0x220f8050
+[20:17:51.57] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[20:17:51.86] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+529+226
+[20:17:53.91] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[20:17:53.92] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[20:17:55.27] /i gi::setCurrentIndex {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:17:55.28] /i gi::setItemSelection {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:17:55.95] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:17:55.96] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:17:57.46] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[20:17:57.47] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[20:18:02.83] /i gi::setCurrentIndex {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:18:02.85] /i gi::setItemSelection {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:18:05.05] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[20:18:05.06] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[20:18:05.19] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[20:18:05.20] /# de::open [dm::findCellView {schematic} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[20:18:05.25] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:18:05.27] /r giWindowId 6
+[20:18:05.27] /r giWindowGeometry 1450x864
+[20:18:06.48] /i db::setAttr geometry -of [gi::getFrames 6] -value 1450x864+33+72
+[20:18:13.00] /i db::setAttr geometry -of [gi::getFrames 6] -value 1450x864+67+54
+[20:18:17.75] /# gi::executeAction deSelectActive -in [gi::getWindows 6]
+[20:18:17.75] /i de::select [de::getActiveFigure [gi::getWindows 6] -point {1.10625 2.98125} -index 0 -intent none] -replace true
+[20:18:17.76] /o oa:0x289dee80
+[20:18:40.95] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[20:18:41.33] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:18:41.42] /i gi::setActiveWindow 0
+[20:18:41.43] /i gi::setActiveWindow 0 -raise true
+[20:18:44.30] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[20:18:44.30] /i de::showOpenDesign
+[20:18:44.32] /o oa:0x241ae230
+[20:18:44.41] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[20:18:44.61] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+529+226
+[20:18:47.35] /i gi::setCurrentIndex {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:18:47.36] /i gi::setItemSelection {designCells} -index {inverter_testbench} -in [gi::getDialogs {deOpenDesign}]
+[20:18:47.86] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:18:47.87] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[20:18:48.61] /i gi::setCurrentIndex {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:18:48.62] /i gi::setItemSelection {designViews} -index {symbol} -in [gi::getDialogs {deOpenDesign}]
+[20:18:48.86] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[20:18:48.86] /# de::open [dm::findCellView {symbol} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[20:18:48.92] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:18:48.94] /r giWindowId 7
+[20:18:48.94] /r giWindowGeometry 1450x864
+[20:18:49.24] /o 0.1
+[20:18:49.58] /i db::setAttr geometry -of [gi::getFrames 7] -value 1450x864+51+90
+[20:18:52.55] /i db::setAttr geometry -of [gi::getFrames 7] -value 1450x864+70+78
+[20:18:53.17] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[20:18:53.45] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:18:53.52] /i gi::setActiveWindow 0
+[20:18:53.52] /i gi::setActiveWindow 0 -raise true
+[20:18:59.20] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+13+506
+[20:19:01.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[20:19:01.79] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:19:02.08] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+666+362
+[20:19:03.03] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:19:03.31] /o Shutdown time: Fri Jan 19 20:19:03 2018
+[20:19:03.31] /o Elapsed session real time: 11.86 minutes
+[20:19:03.31] /o Session terminated. Log is at /home/tempmaj/esegovia/eecs168/cdesigner.log

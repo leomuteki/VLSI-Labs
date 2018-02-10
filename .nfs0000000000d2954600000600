@@ -1,0 +1,1115 @@
+db::setAttr geometry -of [gi::getFrames 0] -value 600x300+8+473
+dm::showNewCellView -parent 0
+gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+435+234
+gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+gi::setItemSelection {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+gi::setCurrentIndex {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+gi::setItemSelection {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+gi::setField {cellViewName} -value {lay} -in [gi::getDialogs {dmNewCellView}]
+gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x590
+db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x610
+db::setAttr geometry -of [gi::getFrames 1] -value 1463x760+0+23
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {0.034 0.035}
+de::zoom -window 1 -factor 0.5 -center {0.034 0.034}
+de::zoom -window 1 -factor 0.5 -center {0.034 0.034}
+ide::pan 1
+de::startDrag {0.27 0.174} -window 1
+de::endDrag {0.25 0.178} -window 1
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+ile::createRectangle
+de::startDrag {0.002 -0.006} -window 1
+de::endDrag {1.806 0.71} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::zoom -window 1 -factor 2.0 -center {1.114 0.658}
+ide::pan 1
+de::startDrag {1.008 0.436} -window 1
+de::endDrag {1.008 0.434} -window 1
+ile::createRectangle
+de::startDrag {-0.002 -0.004} -window 1
+de::endDrag {1.604 0.732} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::zoom -window 1 -factor 0.5 -center {1.442 0.65}
+ide::pan 1
+de::startDrag {0.81 0.63} -window 1
+de::endDrag {0.734 0.598} -window 1
+de::startDrag {1.506 1.082} -window 1
+de::endDrag {1.506 1.086} -window 1
+ile::createRectangle
+de::startDrag {-0.002 0.006} -window 1
+de::endDrag {2.826 1.498} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.906 0.906}
+de::zoom -window 1 -factor 0.5 -center {2.604 0.82}
+de::zoom -window 1 -factor 2.0 -center {2.604 0.824}
+ide::pan 1
+de::startDrag {2.344 0.754} -window 1
+de::endDrag {2.342 0.754} -window 1
+de::startDrag {1.958 0.634} -window 1
+de::endDrag {1.966 0.632} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.966 0.632}
+de::startDrag {1.89 0.62} -window 1
+de::endDrag {1.882 0.596} -window 1
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::startDrag {0.514 0.488} -window 1
+de::endDrag {0.518 0.488} -window 1
+ile::createRectangle
+de::startDrag {0.506 0.504} -window 1
+de::endDrag {1.006 0.864} -window 1
+ile::stretch
+de::startDrag {0.826 0.86} -window 1
+de::endDrag {1.07 1.056} -window 1
+ile::stretch
+de::addPoint {0.878 0.86} -window 1
+de::startDrag {0.866 0.864} -window 1
+de::endDrag {0.91 0.944} -window 1
+ile::stretch
+de::zoom -window 1 -factor 2.0 -center {0.99 0.868}
+ile::stretch
+de::startDrag {0.982 0.868} -window 1
+de::endDrag {1.03 0.926} -window 1
+de::startDrag {0.984 0.862} -window 1
+de::endDrag {1.128 0.96} -window 1
+de::addPoint {0.972 0.848} -window 1
+de::addPoint {0.868 0.992} -window 1
+de::addPoint {0.996 0.858} -window 1
+de::addPoint {1.51 0.898} -window 1
+de::startDrag {1.656 0.858} -window 1
+de::endDrag {1.292 0.916} -window 1
+de::startDrag {1.672 0.906} -window 1
+de::endDrag {1.51 0.906} -window 1
+db::setAttr selectable -of [db::getNext [de::getObjectFilters -from [db::getAttr editDesign -of [de::getContexts -window 1]]  -filter {%name == "lePartialObject"}]] -value [if {[db::getAttr selectable -of [db::getNext [de::getObjectFilters  -from [db::getAttr editDesign -of [de::getContexts -window 1]] -filter {%name == "lePartialObject"}]]]}  {list false} else {list true}] 
+de::startDrag {1.668 0.892} -window 1
+de::endDrag {1.424 1.072} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.55 0.866}
+de::startDrag {1.866 0.894} -window 1
+de::endDrag {1.294 0.862} -window 1
+ide::pan 1
+de::startDrag {1.662 0.734} -window 1
+de::endDrag {1.182 0.898} -window 1
+de::startDrag {2.482 0.602} -window 1
+de::endDrag {2.478 0.602} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.286 0.698}
+ile::createRectangle
+de::startDrag {1.862 0.496} -window 1
+de::endDrag {2.244 0.89} -window 1
+ide::selectByRegion -region point -select true
+de::addPoint {2.022 0.494} -window 1
+ile::align
+de::addPoint {2.05 0.492} -window 1
+de::addPoint {1.126 0.514} -window 1
+de::addPoint {2.046 0.49} -window 1
+de::addPoint {2.106 0.88} -window 1
+de::addPoint {2.1 0.874} -window 1
+de::addPoint {1.238 0.974} -window 1
+de::addPoint {2.23 0.842} -window 1
+de::addPoint {2.134 0.838} -window 1
+de::addPoint {2.082 0.874} -window 1
+de::addPoint {1.09 0.87} -window 1
+de::addPoint {2.058 0.75} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.06 0.722}
+de::zoom -window 1 -factor 0.5 -center {2.056 0.722}
+de::zoom -window 1 -factor 2.0 -center {2.056 0.722}
+de::zoom -window 1 -factor 2.0 -center {2.056 0.722}
+de::zoom -window 1 -factor 0.5 -center {2.056 0.722}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::zoom -window 1 -factor 2.0 -center {1.544 0.634}
+ile::stretch
+de::addPoint {1.324 0.998} -window 1
+de::addPoint {1.344 1.004} -window 1
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.26 1.002} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.198 1} -index 1 -intent none] -replace true
+de::cycleActiveFigure -direction prev
+de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {1.21 0.955} 
+de::endDrag {1.422 0.972} -window 1
+ide::pan 1
+de::startDrag {1.312 0.892} -window 1
+de::endDrag {1.312 0.89} -window 1
+ile::stretch
+de::addPoint {1.078 0.98} -window 1
+de::addPoint {1.08 0.948} -window 1
+ile::stretch
+de::addPoint {1.078 0.976} -window 1
+de::addPoint {1.116 0.964} -window 1
+de::addPoint {1.976 0.888} -window 1
+de::addPoint {2.028 0.996} -window 1
+ile::move
+de::addPoint {2.012 0.896} -window 1
+de::addPoint {2.056 0.852} -window 1
+ide::pan 1
+de::startDrag {2.114 0.718} -window 1
+de::endDrag {2.126 0.72} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.254 0.644}
+de::zoom -window 1 -factor 0.5 -center {1.226 0.648}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {1.138 0.28}
+de::zoom -window 1 -factor 0.5 -center {1.09 0.52}
+de::zoom -window 1 -factor 2.0 -center {1.154 1.224}
+de::zoom -window 1 -factor 2.0 -center {1.154 1.224}
+de::zoom -window 1 -factor 2.0 -center {1.154 1.224}
+de::addPoint {1.158 1.228} -window 1
+ide::pan 1
+de::startDrag {0.506 0.768} -window 1
+de::endDrag {0.502 0.784} -window 1
+ile::createRectangle
+de::addPoint {0.51 -0.504} -window 1
+de::addPoint {0.914 -0.744} -window 1
+ile::stretch
+de::addPoint {0.778 -0.752} -window 1
+de::addPoint {0.822 -1.012} -window 1
+de::addPoint {0.906 -0.792} -window 1
+de::addPoint {1.498 -0.724} -window 1
+ile::createRectangle
+de::addPoint {1.902 -0.504} -window 1
+de::addPoint {2.274 -0.756} -window 1
+de::gotoViewport -window 1 -dir -1
+ile::stretch
+de::addPoint {2.134 -0.76} -window 1
+de::addPoint {2.162 -1.012} -window 1
+de::addPoint {2.274 -0.672} -window 1
+de::addPoint {2.398 -0.676} -window 1
+de::addPoint {2.194 -0.992} -window 1
+de::addPoint {2.25 -0.74} -window 1
+de::addPoint {1.434 -0.996} -window 1
+de::addPoint {1.494 -0.74} -window 1
+de::addPoint {1.294 -0.744} -window 1
+de::addPoint {1.306 -0.744} -window 1
+de::addPoint {1.238 -0.752} -window 1
+de::addPoint {1.254 -0.756} -window 1
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {1.426 0.144}
+de::zoom -window 1 -factor 2.0 -center {1.436 0.15}
+de::zoom -window 1 -factor 0.5 -center {1.447 0.156}
+de::zoom -window 1 -factor 0.5 -center {1.449 0.156}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {1.885 1.072}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {1.875 1.072}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+ile::createRuler
+de::startDrag {0.495 0.904} -window 1
+de::endDrag {0.295 0.924} -window 1
+de::startDrag {0.791 0.972} -window 1
+de::endDrag {0.799 1.168} -window 1
+ile::createRectangle
+de::startDrag {0.291 1.148} -window 1
+de::endDrag {1.151 0.76} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::startDrag {0.299 1.148} -window 1
+de::endDrag {1.719 0.26} -window 1
+ile::createRuler
+de::addPoint {0.783 1.056} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::abortCommand -window 1
+de::abortCommand -window 1
+gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.791 1.052} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.795 1.056} -index 1 -intent none] -replace true
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.787 1.04} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.787 1.056} -index 1 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.799 1.06} -index 2 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.799 1.06} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.795 1.06} -index 1 -intent none] -replace true
+ile::delete
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::zoom -window 1 -factor 2.0 -center {0.831 1.028}
+de::zoom -window 1 -factor 2.0 -center {0.799 1.048}
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.791 1.054} -index 0 -intent none] -replace true
+de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {0.79 1.055} 
+de::endDrag {0.859 1.098} -window 1
+ile::move
+de::startDrag {0.793 1.051} -window 1
+de::endDrag {0.874 1.155} -window 1
+de::startDrag {0.76 1.067} -window 1
+de::endDrag {0.908 1.077} -window 1
+de::startDrag {0.731 1.062} -window 1
+de::endDrag {0.906 1.045} -window 1
+de::startDrag {0.791 1.083} -window 1
+de::endDrag {0.89 1.213} -window 1
+de::startDrag {0.781 1.164} -window 1
+de::endDrag {0.805 0.988} -window 1
+de::addPoint {0.787 1.057} -window 1
+de::addPoint {0.787 1.057} -window 1
+de::completeShape -window 1
+de::addPoint {0.787 1.057} -window 1
+de::startDrag {0.791 1.062} -window 1
+de::endDrag {0.863 1.084} -window 1
+de::addPoint {0.796 1.067} -window 1
+de::completeShape -window 1
+de::addPoint {0.793 1.076} -window 1
+de::startDrag {0.793 1.076} -window 1
+de::endDrag {0.999 1.211} -window 1
+de::addPoint {0.79 1.075} -window 1
+de::addPoint {0.933 1.324} -window 1
+de::addPoint {0.459 0.9} -window 1
+de::addPoint {1.015 1.334} -window 1
+de::zoom -window 1 -factor 0.5 -center {0.991 1.269}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {0.959 0.893} -window 1
+de::addPoint {1.035 1.293} -window 1
+de::zoom -window 1 -factor 2.0 -center {0.903 1.333}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {0.791 1.345} -window 1
+ile::delete
+de::addPoint {0.895 1.305} -window 1
+ile::delete
+de::addPoint {0.799 1.346} -window 1
+de::removePoint {1.037 1.38} -window 1
+ile::delete
+de::zoom -window 1 -factor 0.5 -center {0.902 1.355}
+de::zoom -window 1 -factor 0.5 -center {0.902 1.357}
+de::zoom -window 1 -factor 2.0 -center {0.91 1.393}
+ide::pan 1
+de::startDrag {0.914 1.263} -window 1
+de::endDrag {0.914 1.265} -window 1
+de::zoom -window 1 -factor 0.5 -center {0.96 0.987}
+gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::zoom -window 1 -factor 2.0 -center {1.744 1.119}
+ide::pan 1
+de::startDrag {1.818 1.055} -window 1
+de::endDrag {1.814 1.053} -window 1
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+ile::createRectangle
+de::startDrag {2.468 1.149} -window 1
+de::endDrag {1.78 0.269} -window 1
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {1.782 0.665} -window 1
+de::addPoint {1.712 0.699} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.964 0.805}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {1.684 -0.607}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::addPoint {0.392 -0.381} -window 1
+de::zoom -window 1 -factor 0.5 -center {0.826 -0.459}
+ile::createRectangle
+de::addPoint {0.354 -0.319} -window 1
+de::addPoint {1.706 -0.999} -window 1
+gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {2.586 -0.315} -window 1
+de::addPoint {1.742 -0.999} -window 1
+ile::createRectangle
+de::addPoint {1.75 -0.719} -window 1
+de::zoom -window 1 -factor 2.0 -center {1.73 -0.643}
+ile::createRectangle
+ile::align
+de::addPoint {1.74 -0.659} -window 1
+de::addPoint {1.7 -0.671} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.182 -0.605}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {1.33 1.051}
+de::zoom -window 1 -factor 2.0 -center {0.858 0.563}
+de::abortCommand -window 1
+de::addPoint {1.774 -0.305} -window 1
+de::addPoint {1.794 -0.325} -window 1
+de::addPoint {1.85 -0.309} -window 1
+de::completeShape -window 1
+de::addPoint {1.85 -0.333} -window 1
+de::startDrag {1.882 -0.317} -window 1
+de::endDrag {1.79 -0.477} -window 1
+de::startDrag {1.59 -0.189} -window 1
+de::endDrag {1.886 -0.537} -window 1
+de::abortCommand -window 1
+de::addPoint {1.866 -0.325} -window 1
+de::startDrag {1.994 -0.213} -window 1
+de::endDrag {1.798 -0.333} -window 1
+de::startDrag {2.07 -0.233} -window 1
+de::endDrag {1.89 -0.397} -window 1
+de::startDrag {2.094 -0.177} -window 1
+de::endDrag {1.578 -0.433} -window 1
+de::addPoint {1.502 -0.233} -window 1
+de::startDrag {1.254 -0.217} -window 1
+de::endDrag {2.006 -0.389} -window 1
+ile::delete
+de::addPoint {1.47 -0.337} -window 1
+ile::delete
+de::addPoint {1.574 -0.329} -window 1
+ile::delete
+de::addPoint {1.59 -0.325} -window 1
+ile::delete
+de::addPoint {1.77 -0.329} -window 1
+de::addPoint {1.886 -0.329} -window 1
+de::completeShape -window 1
+de::addPoint {1.834 -0.337} -window 1
+ile::createRectangle
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {0.554 -0.633}
+de::zoom -window 1 -factor 0.5 -center {0.554 -0.633}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {0.374 -0.345}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {0.378 -0.953}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::startDrag {0.35 -0.317} -window 1
+de::endDrag {1.71 -1.009} -window 1
+gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::startDrag {2.562 -0.281} -window 1
+de::endDrag {1.802 -0.973} -window 1
+ile::align
+de::addPoint {1.79 -0.765} -window 1
+de::addPoint {1.706 -0.701} -window 1
+de::addPoint {2.054 -0.989} -window 1
+de::addPoint {1.482 -1.017} -window 1
+de::addPoint {1.986 -0.289} -window 1
+de::addPoint {1.514 -0.337} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.426 -0.325}
+de::zoom -window 1 -factor 0.5 -center {2.424 -0.323}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {2.044 0.269} -window 1
+de::addPoint {1.604 0.261} -window 1
+de::addPoint {2.152 1.165} -window 1
+de::addPoint {1.54 1.169} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.824 0.901}
+de::zoom -window 1 -factor 2.0 -center {2.808 0.901}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::abortCommand -window 1
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
+gi::setCurrentIndex {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {9,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.192 -0.323} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.576 -0.331} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.592 -0.335} -index 0 -intent none] -replace true
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.608 -0.343} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.584 0.249} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.796 0.265} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.988 0.613} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.324 -0.619} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.496 -0.687} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.248 0.545} -index 0 -intent none] -replace true
+ile::delete
+de::zoom -window 1 -factor 2.0 -center {1.704 0.121}
+de::zoom -window 1 -factor 0.5 -center {1.712 0.121}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {-0.02 6.093}
+de::zoom -window 1 -factor 0.5 -center {-0.02 6.085}
+de::zoom -window 1 -factor 0.5 -center {-0.02 6.085}
+de::zoom -window 1 -factor 0.5 -center {-0.02 6.085}
+de::zoom -window 1 -factor 0.5 -center {0.108 6.213}
+de::zoom -window 1 -factor 0.5 -center {0.108 6.213}
+de::zoom -window 1 -factor 0.5 -center {1.132 7.749}
+de::zoom -window 1 -factor 2.0 -center {1.132 7.237}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {1.132 -303.035}
+de::zoom -window 1 -factor 0.5 -center {1.132 -303.035}
+de::zoom -window 1 -factor 0.5 -center {1.132 -303.035}
+de::zoom -window 1 -factor 0.5 -center {1.132 -303.035}
+de::zoom -window 1 -factor 0.5 -center {4.122 -298.55}
+de::zoom -window 1 -factor 0.5 -center {4.122 -300.045}
+de::zoom -window 1 -factor 0.5 -center {4.122 -300.045}
+de::zoom -window 1 -factor 0.5 -center {4.122 -300.045}
+de::zoom -window 1 -factor 0.5 -center {78.872 -80.28}
+de::zoom -window 1 -factor 0.5 -center {81.862 -71.31}
+de::zoom -window 1 -factor 0.5 -center {101.297 -27.955}
+de::zoom -window 1 -factor 2.0 -center {93.822 25.865}
+de::zoom -window 1 -factor 2.0 -center {12.345 -3.287}
+de::zoom -window 1 -factor 2.0 -center {10.85 -3.661}
+de::zoom -window 1 -factor 2.0 -center {10.85 -2.913}
+de::zoom -window 1 -factor 2.0 -center {10.57 -2.446}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction E -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {-0.689 1.338}
+de::zoom -window 1 -factor 2.0 -center {0.175 1.221}
+de::zoom -window 1 -factor 2.0 -center {1.191 1.221}
+de::zoom -window 1 -factor 2.0 -center {1.483 1.139}
+de::zoom -window 1 -factor 0.5 -center {1.483 1.139}
+de::zoom -window 1 -factor 2.0 -center {1.483 1.139}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {1.483 1.139}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {-0.018 -0.128}
+de::zoom -window 1 -factor 2.0 -center {-0.018 -0.128}
+de::zoom -window 1 -factor 2.0 -center {-0.018 -0.127}
+de::zoom -window 1 -factor 2.0 -center {-0.009 -0.075}
+de::zoom -window 1 -factor 2.0 -center {-0.002 -0.045}
+de::zoom -window 1 -factor 2.0 -center {-0.002 -0.023}
+de::zoom -window 1 -factor 0.5 -center {0.001 -0.018}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+ile::stretch
+de::addPoint {0.003 0.005} -window 1
+de::addPoint {0.003 0.001} -window 1
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {0.095 -0.025}
+de::zoom -window 1 -factor 0.5 -center {0.096 -0.025}
+de::zoom -window 1 -factor 0.5 -center {0.094 -0.024}
+de::zoom -window 1 -factor 0.5 -center {0.086 -0.025}
+de::zoom -window 1 -factor 0.5 -center {0.042 -0.019}
+de::zoom -window 1 -factor 2.0 -center {0.434 0.42}
+de::zoom -window 1 -factor 2.0 -center {0.434 0.42}
+de::zoom -window 1 -factor 0.5 -center {0.434 0.42}
+de::zoom -window 1 -factor 0.5 -center {0.434 0.42}
+de::zoom -window 1 -factor 0.5 -center {0.434 0.42}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+de::pan -direction S -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {0.574 0.957}
+de::zoom -window 1 -factor 2.0 -center {0.568 0.881}
+de::zoom -window 1 -factor 0.5 -center {0.189 1.269}
+de::addPoint {0.375 1.498} -window 1
+de::addPoint {0.375 1.498} -window 1
+de::addPoint {2.833 1.217} -window 1
+de::addPoint {2.828 1.217} -window 1
+de::zoom -window 1 -factor 2.0 -center {0.795 0.797}
+ile::createRectangle
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::addPoint {0.068 1.396} -window 1
+de::addPoint {0.629 1.252} -window 1
+ide::selectByRegion -region point -select true
+ile::stretch
+de::addPoint {0.068 1.328} -window 1
+de::addPoint {0.147 1.343} -window 1
+ile::align
+de::addPoint {0.15 1.334} -window 1
+de::addPoint {-0.011 1.305} -window 1
+ile::stretch
+de::addPoint {0.623 1.334} -window 1
+de::addPoint {0.494 1.311} -window 1
+ile::createRuler
+de::addPoint {0.127 1.106} -window 1
+de::addPoint {0.5 1.112} -window 1
+ile::stretch
+de::addPoint {0.129 1.112} -window 1
+de::addPoint {0.091 1.118} -window 1
+ile::createRectangle
+de::addPoint {0.08 1.109} -window 1
+ile::createRectangle
+de::addPoint {0.089 1.112} -window 1
+de::abortCommand -window 1
+ile::align
+de::addPoint {0.083 1.101} -window 1
+de::addPoint {-0.002 1.104} -window 1
+ile::stretch
+de::addPoint {0.506 1.089} -window 1
+de::addPoint {0.509 1.104} -window 1
+de::addPoint {0.509 1.095} -window 1
+de::addPoint {0.503 1.095} -window 1
+de::abortCommand -window 1
+de::select [de::getActiveFigure [gi::getWindows 1] -point {0.448 1.287} -index 0 -intent none] -replace true
+ile::delete
+ile::createRuler
+de::addPoint {0.921 1.466} -window 1
+de::addPoint {0.956 1.182} -window 1
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {0.938 1.46} -window 1
+de::addPoint {0.924 1.46} -window 1
+de::addPoint {0.932 1.506} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::addPoint {0.921 1.471} -window 1
+de::addPoint {0.932 1.512} -window 1
+ile::stretch
+de::addPoint {0.918 1.191} -window 1
+de::addPoint {0.944 1.01} -window 1
+ile::move
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addObject [de::getActiveFigure [gi::getWindows 1] -point {0.34 1.106} -index 0 -intent select] -window 1
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {0.354 1.092} -window 1
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::addPoint {0.521 0.715} -window 1
+de::commandOption R90 -point {0.559 0.922}
+ide::selectByRegion -region point -select true
+de::addPoint {0.395 0.733} -window 1
+de::addPoint {0.395 0.736} -window 1
+ile::createRectangle
+de::addPoint {0.36 0.733} -window 1
+de::abortCommand -window 1
+ile::align
+de::addPoint {0.348 0.733} -window 1
+de::addPoint {0.927 1.001} -window 1
+de::addPoint {0.909 1.095} -window 1
+de::addPoint {0.509 1.004} -window 1
+ile::createRectangle
+de::addPoint {0.547 0.963} -window 1
+de::addPoint {1.379 0.61} -window 1
+de::zoom -window 1 -factor 2.0 -center {0.442 1.01}
+de::zoom -window 1 -factor 2.0 -center {0.449 1.007}
+de::zoom -window 1 -factor 2.0 -center {0.455 1.007}
+ide::selectByRegion -region point -select true
+ile::createRectangle
+ile::align
+de::addPoint {0.662 0.964} -window 1
+de::addPoint {0.481 0.998} -window 1
+de::addPoint {0.544 0.964} -window 1
+de::addPoint {0.499 1.019} -window 1
+de::zoom -window 1 -factor 0.5 -center {0.517 1.01}
+de::zoom -window 1 -factor 2.0 -center {0.563 1.024}
+de::zoom -window 1 -factor 0.5 -center {0.565 1.024}
+de::zoom -window 1 -factor 0.5 -center {0.566 1.024}
+de::zoom -window 1 -factor 0.5 -center {0.568 1.024}
+ile::stretch
+de::addPoint {0.746 0.606} -window 1
+de::addPoint {0.81 0.492} -window 1
+de::addPoint {0.935 0.492} -window 1
+de::addPoint {0.979 0.495} -window 1
+de::addPoint {1.368 0.749} -window 1
+de::addPoint {1.487 0.801} -window 1
+de::addPoint {1.49 0.801} -window 1
+de::addPoint {1.496 0.801} -window 1
+de::zoom -window 1 -factor 2.0 -center {1.534 0.871}
+ile::stretch
+de::zoom -window 1 -factor 0.5 -center {1.702 0.903}
+de::zoom -window 1 -factor 2.0 -center {1.702 0.903}
+ile::move
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {0.505 1.398} -window 1
+de::addPoint {0.511 1.309} -window 1
+de::zoom -window 1 -factor 0.5 -center {0.708 1.203}
+de::zoom -window 1 -factor 2.0 -center {0.015 1.237}
+de::zoom -window 1 -factor 2.0 -center {0.015 1.237}
+de::zoom -window 1 -factor 0.5 -center {0 1.285}
+de::zoom -window 1 -factor 0.5 -center {0.011 1.287}
+de::zoom -window 1 -factor 2.0 -center {0.07 1.228}
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::addPoint {0.496 1.214} -window 1
+de::addPoint {1.492 0.916} -window 1
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+de::pan -direction W -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 0.5 -center {0.75 1.031}
+de::addPoint {0.012 0.999} -window 1
+de::addPoint {1.504 0.836} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::addPoint {0.012 0.996} -window 1
+ile::move
+de::addPoint {0.266 1.011} -window 1
+de::addPoint {1.805 1.057} -window 1
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {1.527 1.005} -window 1
+de::addPoint {1.495 1.002} -window 1
+de::zoom -window 1 -factor 2.0 -center {1.974 0.935}
+ile::stretch
+de::addPoint {2.037 1.009} -window 1
+de::addPoint {2.04 1.006} -window 1
+ile::stretch
+de::addPoint {2.037 1.011} -window 1
+de::addPoint {2.04 1.001} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::addPoint {1.58 1.567} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.412 1.411}
+de::abortCommand -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {2.177 0.961}
+de::zoom -window 1 -factor 2.0 -center {2.148 0.97}
+ile::stretch
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::zoom -window 1 -factor 0.5 -center {2.082 1}
+de::zoom -window 1 -factor 0.5 -center {2.085 1.005}
+de::zoom -window 1 -factor 0.5 -center {2.085 1.006}
+de::zoom -window 1 -factor 2.0 -center {2.086 1.012}
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::startDrag {3.254 1.286} -window 1
+de::endDrag {3.385 1.497} -window 1
+de::addPoint {3.245 1.19} -window 1
+de::zoom -window 1 -factor 0.5 -center {3.245 1.19}
+de::zoom -window 1 -factor 2.0 -center {3.245 1.19}
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setActiveTab {tabs} -tabName {OLPLayerTab} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setActiveTab {tabs} -tabName {OLPLPPTab} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllInvisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetAllVisible -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {4,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {3,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {1,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::zoom -window 1 -factor 2.0 -center {2.025 1.015}
+ile::stretch
+de::zoom -window 1 -factor 0.5 -center {2.042 1.005}
+de::zoom -window 1 -factor 2.0 -center {1.973 0.999}
+de::addPoint {2.011 0.997} -window 1
+de::gotoViewport -window 1 -dir -1
+de::gotoViewport -window 1 -dir -1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::abortCommand -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.017 1.002} -index 0 -intent none] -replace true
+ile::stretch
+de::addPoint {2.042 1.003} -window 1
+de::abortCommand -window 1
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.889 1.002} -index 0 -intent none] -replace true
+ile::createRuler
+de::addPoint {1.788 0.902} -window 1
+de::addPoint {2.291 0.935} -window 1
+ile::stretch
+de::addPoint {2.285 0.904} -window 1
+de::addPoint {2.496 0.859} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.276 0.894} -index 0 -intent none] -replace true
+ile::delete
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.977 1.006} -index 0 -intent none] -replace true
+ile::stretch
+de::addPoint {2.041 1.003} -window 1
+de::addPoint {2.161 0.997} -window 1
+ile::stretch
+de::addPoint {2.158 1.008} -window 1
+de::addPoint {2.215 1.002} -window 1
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.209 0.999} -index 0 -intent none] -replace true
+de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {2.215 1} 
+de::endDrag {2.117 1} -window 1
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.112 1} -index 0 -intent none] -replace true
+ile::stretch
+de::addPoint {2.047 0.999} -window 1
+de::addPoint {2.124 1.002} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.092 0.994}
+de::zoom -window 1 -factor 0.5 -center {2.092 0.995}
+de::zoom -window 1 -factor 0.5 -center {2.092 0.995}
+de::zoom -window 1 -factor 0.5 -center {1.951 1.088}
+de::zoom -window 1 -factor 0.5 -center {1.975 1.088}
+de::zoom -window 1 -factor 2.0 -center {1.929 1.182}
+de::zoom -window 1 -factor 2.0 -center {1.952 1.182}
+de::zoom -window 1 -factor 2.0 -center {1.94 1.194}
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.302 1.03} -index 0 -intent none] -replace true
+de::zoom -window 1 -factor 2.0 -center {2.302 1.03}
+de::zoom -window 1 -factor 0.5 -center {2.302 1.03}
+de::zoom -window 1 -factor 0.5 -center {2.302 1.03}
+de::zoom -window 1 -factor 2.0 -center {2.349 0.96}
+ile::stretch
+de::addPoint {1.748 1.007} -window 1
+de::addPoint {1.882 0.884} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.443 1.1}
+de::cycleActiveFigure [gi::getWindows 1] -direction next
+de::select [de::getActiveFigure [gi::getWindows 1] -point {1.926 0.998} -index 0 -intent none] -replace true
+ile::stretch
+ile::stretch
+ile::stretch
+ile::measureDistance
+ile::createRectangle
+ile::createRectangle
+ile::stretch
+de::addPoint {2.419 1.01} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.344 0.998}
+de::addPoint {2.38 1.001} -window 1
+ile::createRectangle
+ile::createRectangle
+ile::align
+de::addPoint {1.884 0.999} -window 1
+de::addPoint {1.498 0.999} -window 1
+de::abortCommand -window 1
+de::addPoint {2.19 1.001} -window 1
+ile::stretch
+de::addPoint {2.385 1.004} -window 1
+de::addPoint {2.001 0.986} -window 1
+ile::createRectangle
+de::addPoint {2.061 0.95} -window 1
+de::addPoint {2.23 0.813} -window 1
+ile::stretch
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {2.144 0.951} -window 1
+de::addPoint {1.958 0.995} -window 1
+de::addPoint {2.094 0.907} -window 1
+de::addPoint {2.005 1.007} -window 1
+de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+de::addPoint {2.065 0.909} -window 1
+de::addPoint {2.002 1.005} -window 1
+de::zoom -window 1 -factor 0.5 -center {1.945 0.843}
+de::addPoint {2.088 0.846} -window 1
+de::addPoint {1.391 0.505} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.115 0.779}
+ile::stretch
+de::addPoint {2.121 0.683} -window 1
+de::addPoint {2.146 0.998} -window 1
+de::addPoint {2.232 0.922} -window 1
+de::addPoint {2.5 0.931} -window 1
+de::addPoint {2.292 1.01} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.287 0.957}
+de::zoom -window 1 -factor 2.0 -center {2.524 0.882}
+de::zoom -window 1 -factor 2.0 -center {2.524 0.882}
+ile::createRectangle
+ile::createRuler
+de::addPoint {2.778 0.923} -window 1
+de::addPoint {2.583 0.923} -window 1
+ile::stretch
+ile::align
+de::addPoint {2.779 0.925} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.817 0.921}
+de::zoom -window 1 -factor 0.5 -center {2.816 0.93}
+de::zoom -window 1 -factor 0.5 -center {2.817 0.931}
+de::zoom -window 1 -factor 2.0 -center {2.851 0.843}
+de::zoom -window 1 -factor 2.0 -center {2.851 0.843}
+de::zoom -window 1 -factor 2.0 -center {2.823 0.919}
+de::zoom -window 1 -factor 2.0 -center {2.823 0.919}
+de::addPoint {2.821 0.923} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.81 0.943}
+de::zoom -window 1 -factor 0.5 -center {2.805 0.934}
+de::zoom -window 1 -factor 0.5 -center {2.803 0.927}
+de::zoom -window 1 -factor 0.5 -center {2.803 0.928}
+de::zoom -window 1 -factor 0.5 -center {2.804 0.928}
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+de::abortCommand -window 1
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+de::zoom -window 1 -factor 2.0 -center {2.803 0.927}
+ile::stretch
+ile::align
+de::addPoint {2.78 0.924} -window 1
+gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setCurrentIndex {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::setItemSelection {lpps} -index {2,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+de::addPoint {2.819 0.925} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.764 0.925}
+de::addPoint {2.586 0.924} -window 1
+de::addPoint {2.5 0.925} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.59 0.929}
+de::zoom -window 1 -factor 0.5 -center {2.4 0.895}
+de::zoom -window 1 -factor 2.0 -center {2.338 0.932}
+de::zoom -window 1 -factor 0.5 -center {2.364 0.931}
+de::zoom -window 1 -factor 0.5 -center {2.365 0.93}
+de::zoom -window 1 -factor 0.5 -center {2.362 0.931}
+ide::pan 1
+de::startDrag {3.185 0.528} -window 1
+de::endDrag {3.226 0.528} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.052 0.674}
+de::startDrag {1.509 0.382} -window 1
+de::endDrag {1.506 0.382} -window 1
+de::zoom -window 1 -factor 2.0 -center {1.98 0.925}
+ile::stretch
+de::addPoint {1.993 1.001} -window 1
+de::addPoint {1.894 0.989} -window 1
+ile::align
+de::addPoint {1.997 0.949} -window 1
+de::addPoint {1.894 0.997} -window 1
+ile::stretch
+de::addPoint {2.5 0.842} -window 1
+de::addPoint {2.397 0.826} -window 1
+de::addPoint {2.396 0.823} -window 1
+de::addPoint {2.397 0.823} -window 1
+de::addPoint {2.397 0.823} -window 1
+de::addPoint {2.402 0.823} -window 1
+de::zoom -window 1 -factor 2.0 -center {2.526 0.924}
+de::zoom -window 1 -factor 0.5 -center {2.527 0.924}
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction S -multiplier 0.5
+de::pan -direction N -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::pan -direction E -multiplier 0.5
+gi::executeAction deObjectActivation -in [gi::getWindows 1]
+de::zoom -window 1 -factor 2.0 -center {2.556 1.003}
+ile::stretch
+de::addPoint {2.499 0.923} -window 1
+de::addPoint {2.473 0.923} -window 1
+ile::align
+de::addPoint {2.475 0.926} -window 1
+de::addPoint {2.401 0.925} -window 1
+de::zoom -window 1 -factor 0.5 -center {2.671 0.944}
+de::zoom -window 1 -factor 0.5 -center {2.671 0.943}
+de::zoom -window 1 -factor 2.0 -center {2.82 0.964}
+de::zoom -window 1 -factor 2.0 -center {2.82 0.964}
+ile::stretch
+de::addPoint {2.818 0.89} -window 1
+de::addPoint {3.001 0.89} -window 1
+ile::stretch
+ide::selectByRegion -region point -select true
+ile::align
+de::addPoint {2.818 0.924} -window 1
+de::addPoint {3.002 0.922} -window 1
+de::completeShape -window 1
+ile::stretch
+de::addPoint {3 0.833} -window 1
+de::addPoint {2.898 0.85} -window 1
+de::abortCommand -window 1
+de::addPoint {2.967 0.923} -window 1
+de::addPoint {2.955 0.918} -window 1
+de::addPoint {2.951 0.922} -window 1
+de::abortCommand -window 1
+gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+de::select [de::getActiveFigure [gi::getWindows 1] -point {2.952 0.925} -index 0 -intent none] -replace true
+ile::delete
+de::zoom -window 1 -factor 0.5 -center {2.88 0.938}
+de::zoom -window 1 -factor 0.5 -center {2.868 0.939}
+de::zoom -window 1 -factor 0.5 -center {2.836 0.939}
+de::zoom -window 1 -factor 0.5 -center {2.65 0.956}
+de::zoom -window 1 -factor 2.0 -center {1.259 0.957}
+de::zoom -window 1 -factor 2.0 -center {1.259 0.957}
+de::zoom -window 1 -factor 2.0 -center {1.259 0.957}
+de::zoom -window 1 -factor 0.5 -center {1.274 0.979}
+de::zoom -window 1 -factor 0.5 -center {1.276 0.985}
+gi::executeAction deSaveDesign -in [gi::getWindows 1]
