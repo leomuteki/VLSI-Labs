@@ -1,0 +1,19 @@
+[18:32:13.05] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Sat Feb 10 18:31:55 2018
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[18:32:14.56] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[18:32:14.56] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[18:32:19.78] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[18:32:19.85] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+8+473
+[18:32:20.33] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[18:32:20.61] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+544+293
+[18:32:21.36] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[18:32:21.73] /o Shutdown time: Sat Feb 10 18:32:21 2018
+[18:32:21.73] /o Elapsed session real time: 0.13 minutes
+[18:32:21.73] /o Session terminated. Log is at /home/tempmaj/esegovia/eecs168/cdesigner.log
